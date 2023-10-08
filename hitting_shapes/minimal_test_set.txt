@@ -1,0 +1,46 @@
+Minimal test set for HitDetection.java
+
+AUTHORS:
+- <Xianli Wen> (<1762656>)
+- <STUDENT 2'S NAME> (<STUDENT 2'S ID>)
+
+TEST CASE 1
+motivation  : Example run, test a point in first circle
+input       : 0 0 3.1 0.25 0.13 1 2.1 2.03
+output      : The point hits the first circle
+
+
+TEST CASE 2
+motivation  : Example run, test a point in second circle
+input       : 100 100 1 0 0 3 0 2
+output      : The point hits the second circle
+
+
+TEST CASE 3
+motivation  : Example run, test a point in both circles
+input       : 0 0 2 2 0 3 1 0
+output      : The point hits both circles
+
+
+TEST CASE 4
+motivation  : Example run, test a point not in either circle
+input       : 0 0 1 2 2 3 100 100
+output      : The point does not hit either circle
+
+
+TEST CASE 5
+motivation  : Example run, test input error that the first circle has a negative radius
+input       : 0 0 -1 1 2 3 1 1 
+output      : input error
+
+
+TEST CASE 6
+motivation  : Example run, test input error that the second circle has a negative radius
+input       : 0 0 1 4 2 -1 1 1
+output      : input error
+
+
+TEST CASE 7
+motivation  : Example run, test input error that both circles have negtive radius
+input       : 0 0 -1 1 2 -1 1 1
+output      : input error
